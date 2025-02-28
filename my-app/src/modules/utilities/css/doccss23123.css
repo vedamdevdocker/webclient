@@ -1,0 +1,80 @@
+/* doccss.css */
+
+/* Apply styles to the DocumentationContainer */
+.documentation-content {
+  background-color: #cfe9dd;
+  padding: 20px;
+  border: 10px solid #e75757;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(201, 23, 23, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left; /* Align text to the left */
+  max-height: 400px; /* Set a maximum height to contain the content */
+  overflow: auto; /* Allow overflow and provide a scrollbar when needed */
+  opacity: 1; /* Set opacity to 1 to make it fully visible */
+  position: relative; /* Add this to allow content to overlay the background */
+  z-index: 1; /* Ensure the content is displayed above the background */
+}
+
+
+.documentation-content h2 {
+  font-size: 20px;
+  color: #000708;
+  margin: 0 0 1px; /* Reduced margin */
+  text-align: left;
+}
+
+.documentation-content h3 {
+  font-size: 14px;
+  color: #5ba2df;
+  margin: 15px 0 10px; /* Reduced margin */
+}
+
+.documentation-content p {
+  font-size: 12px;
+  color: #101111;
+  line-height: 1.5;
+  margin: 0 0 15px; /* Reduced margin */
+}
+
+.subheading {
+  font-size: 1.1em; /* Reduced font size */
+  font-weight: bold;
+  margin-top: 1em;
+  text-align: left;
+}
+
+.indented-paragraph {
+  text-indent: 10px;
+  margin-top: 0.5em;
+  text-align: left;
+}
+
+.italian-text {
+  font-style: italic;
+  color: #FF5733; /* Adjust the color as needed */
+}
+
+
+.help-homepage-menu {
+  text-align: left;
+  align-items: left;
+}
+
+.text-display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(10, 10, 10);
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+

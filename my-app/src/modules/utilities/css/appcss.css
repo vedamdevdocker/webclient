@@ -1,0 +1,646 @@
+.page-container {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  background-color: rgb(215, 199, 232);
+}
+.title {
+  margin-bottom: 20px;
+}
+  
+.parent-container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  background-color: rgb(255, 205, 246);
+  margin-top: 20px;
+  padding: 4px;
+  /* Remove the duplicate display property */
+}
+  
+.child-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: first baseline;
+  border: 1px solid rgb(86, 85, 89);
+}
+  
+.menu-container {
+  flex-basis: 50%;
+  background-color: rgb(110, 109, 112);
+  padding: 4px;
+}
+  
+.empty-container {
+  flex-basis: 50%;
+  padding: 10px;
+  position: relative;
+}
+
+.listmenu-container {
+  flex-basis: 80%;
+  background-color: rgb(112, 111, 109);
+  padding: 10px;
+}
+
+.left-aligned-table {
+  text-align: left;
+}
+
+.side-by-side-container {
+  display: flex;
+  gap: 20px; /* Adjust the gap between the two components */
+}
+  
+.empty-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/lake-am.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.8;
+}
+  
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../images/Wolf.gif");
+  border: 4px solid black;
+  margin-top: 20px;
+  padding: 10px;
+}
+  
+.sub-container {
+  flex: 1;
+  border: 2px solid black;
+  background-color: lightgray;
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+}
+  
+.random-image {
+  margin-top: 8px;
+}
+
+.sub-container-group {
+  display: flex;
+  flex-direction: row; /* Display addresses horizontally */
+}
+  
+.rotating-image {
+  position: fixed;
+  top: 60px;
+  right: -70px; /* Adjust this value to move the image further to the right */
+  animation: rotateImage 5s linear infinite;
+  transform-origin: center center; /* Set the transform origin to center for rotation */
+  z-index: 999;
+}
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.menu-list {
+  display: flex; /* Check for conflicts with other styles */
+  flex-direction: column;
+}
+
+.menu-button {
+  text-align: left;
+  /* Add other button styles as needed */
+}
+  
+.empty-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(10, 10, 10);
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-button-container {
+  margin-bottom: 20px;
+}
+
+.rotating-image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu-list-container {
+  display: flex;
+  gap:5px;
+}
+
+/* Stylesheet */
+.model-item-quantity {
+  background-color: rgb(140, 135, 235);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.model-item-label, .quantity-label {
+  font-weight: bold;
+}
+
+.model-item-value, .quantity-value {
+  font-weight: bold;
+  color: rgb(235, 234, 236);
+}
+
+.form-container {
+  background-color: rgb(128, 142, 175);
+  border: 5px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+  
+.table-row {
+  border: 4px solid rgb(141, 157, 169);
+}
+
+.title {
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.sub-title {
+  margin-bottom: 20px;
+  align-items: left;
+  text-align: left;
+}
+
+.employee-pic {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.table-header {
+  background-color: rgb(196, 19, 119) !important;
+  text-shadow: 0 0 0 black !important;
+} 
+
+.input-field {
+  width: 50ch;
+}
+
+.label-container {
+  flex: 0 0 auto;
+  width: 200px; /* Adjust the width as desired */
+  margin-left: 5px; /* Adjust the margin as desired */
+  margin-right: 5px; /* Adjust the margin as desired */
+  white-space: nowrap; /* Prevent label text from wrapping */
+  overflow: hidden; /* Hide any overflow of label text */
+  text-overflow: ellipsis; /* Display ellipsis (...) for truncated label text */
+  text-align: left;
+}
+
+.form-row {
+  display: flex;
+}
+
+.custom-file-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-heading {
+  text-align: start;
+}
+
+/* styles.css (or any other CSS file you're using) */
+.right-side-form-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+/* Add this CSS to your existing styles */
+.permissions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.permission-row {
+  display: flex;
+  flex-direction: column;
+  width: calc(20% - 10px); /* Adjust the percentage or use a fixed width value */
+  margin-bottom: 10px;
+}
+
+.permission-row .form-group {
+  margin-bottom: 5px;
+}
+
+.permission-row .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.right-side-form-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+
+.permission-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-message {
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.results-container {
+  border: 4px solid #cf84cc; /* Border style and color */
+  padding: 10px; /* Optional padding for spacing */
+  max-height: 400px; /* Set the maximum height to limit the container's size */
+  overflow: auto; /* Add a scrollbar when content exceeds container's height */
+}
+
+/* Add appropriate styling for checkboxes */
+.checkbox-label {
+  margin-left: 5px;
+}
+
+/* CSS for Address Fieldset */
+.address-fieldset {
+  border: 2px solid #ccc; /* Add a border around the fieldset */
+  padding: 10px;
+  margin: 10px 0;
+  display: table; /* Use table layout to ensure full width */
+  width: 50%; /* Make the fieldset full width */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.address-fieldset legend {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px; /* Add spacing below the legend */
+}
+
+.address-fields .form-row {
+  margin-bottom: 10px; /* Add spacing between each field */
+}
+
+.contact-fieldset {
+  border: 5px solid #4453d7; /* Add a border around the fieldset */
+  padding: 10px;
+  margin: 10px 0;
+  display: table; /* Use table layout to ensure full width */
+  width: 100%; /* Make the fieldset full width */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+/* Additional custom styling if needed */
+
+/* Custom CSS for striped table */
+.striped-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.striped-table th,
+.striped-table td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.striped-table th {
+  background-color: #f2f2f2; /* Background color for header row */
+}
+
+.striped-table tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Background color for odd rows */
+}
+
+.striped-table tr:nth-child(even) {
+  background-color: #ffffff; /* Background color for even rows */
+}
+
+/* Add this CSS to your stylesheet */
+.yellow-box-container {
+  border: 2px solid yellow;
+  padding: 5px; /* Optional: Add padding for spacing */
+}
+
+/* Add these styles to control the header alignment */
+.logout_page-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+}
+
+.right-header {
+  margin-left: auto; /* Push the Logout button to the right */
+}
+
+
+.documentation-content {
+  background-color: #cfe9dd;
+  padding: 20px;
+  border: 10px solid #5774e7;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(201, 23, 23, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left; /* Align text to the left */
+  max-height: 400px; /* Set a maximum height to contain the content */
+  overflow: auto; /* Allow overflow and provide a scrollbar when needed */
+  opacity: 1; /* Set opacity to 1 to make it fully visible */
+  position: relative; /* Add this to allow content to overlay the background */
+  z-index: 1; /* Ensure the content is displayed above the background */
+  align-items: flex-start;
+}
+
+
+
+.documentation-content h2 {
+  font-size: 20px;
+  color: #000708;
+  margin: 0 0 1px; /* Reduced margin */
+  text-align: left;
+}
+
+.documentation-content h3 {
+  font-size: 14px;
+  color: #5ba2df;
+  margin: 15px 0 10px; /* Reduced margin */
+}
+
+.documentation-content p {
+  font-size: 12px;
+  color: #101111;
+  line-height: 1.5;
+  margin: 0 0 15px; /* Reduced margin */
+}
+
+.subheading {
+  font-size: 1.1em; /* Reduced font size */
+  font-weight: bold;
+  margin-top: 1em;
+  text-align: left;
+}
+
+.indented-paragraph {
+  text-indent: 10px;
+  margin-top: 0.5em;
+  text-align: left;
+}
+
+.italian-text {
+  font-style: italic;
+  color: #FF5733; /* Adjust the color as needed */
+}
+
+
+.help-homepage-menu {
+  text-align: left;
+  align-items: left;
+}
+
+.text-display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(10, 10, 10);
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.help-example {
+  color: blue;
+  font-style: italic;
+}
+
+.form-group-bin {
+  background-color: #F0F8FF;
+}
+
+.form-group-rack {
+  background-color: #FFE4E1;
+}
+
+.form-group-row {
+  background-color: #F0FFF0;
+}
+
+.form-group-aisle {
+  background-color: #E6E6FA;
+}
+
+.form-group-zone {
+  background-color: #FFDAB9;
+}
+
+.form-group-location {
+  background-color: #FAFAD2;
+}
+
+.form-group-warehouse {
+  background-color: #FFFAF0;
+}
+
+.user-details-span {
+  margin-left: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.singleRowContainer {
+  white-space: nowrap;
+}
+
+.date-input {
+  width: 200% !important;
+}
+
+.po-line-modal-content {
+  width: 1800px; /* Adjust width as needed */
+  max-width: 90%; /* Ensure modal is responsive */
+  size:"xl";
+}
+
+.po-line-button-container {
+  display: inline-flex;
+  gap: 8px; /* Adjust the gap between buttons as needed */
+}
+
+/* Modal title */
+.po-line-modal-title-custom {
+  background-color: rgba(153, 48, 223, 0.865);
+}
+
+
+
+/* Table rows */
+.po-line-table-row-custom:nth-child(even) {
+  background-color: lightorange;
+}
+
+.po-line-table-row-custom-even {
+  color: rgb(240, 169, 169);
+}
+
+.po-line-table-row-custom-odd {
+  background-color: white; /* or any other color for odd rows */
+}
+
+.jo-line-table-row-custom-even {
+  color: rgb(240, 169, 169);
+}
+
+.jo-line-table-row-custom-odd {
+  background-color: white; /* or any other color for odd rows */
+}
+
+.po-line-table-container {
+  max-width: 100%;
+  overflow-x: auto;
+  font-size: 12px; /* Adjust the font size as needed */
+  text-align: center;
+}
+
+.po-line-table {
+  width: 100%; /* Ensure the table takes full width of its container */
+}
+
+/* Table header */
+.po-line-table-header-custom th {
+  background-color: gray;
+  color: white;
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+.jo-line-table-header-custom th {
+  background-color: gray;
+  color: white;
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+.jo-line-table-container {
+  max-width: 100%;
+  overflow-x: auto;
+  font-size: 12px; /* Adjust the font size as needed */
+  text-align: center;
+}
+
+.modal-body-scrollable {
+  max-height: 400px; /* Set maximum height for the modal body */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.editable-field {
+  background-color: white;
+}
+
+
+.text-success {
+  color: green;
+}
+
+.text-danger {
+  color: red;
+}
+
+
+/* appcss.css */
+
+.custom-file-upload {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.custom-file-upload input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.file-label {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+}
+
+.file-label:hover {
+  background-color: #0056b3;
+}
+
+.image-previews {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.selected-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.home-link {
+  margin-left: 10px; /* Optional: adds some space between the link and UserName */
+}

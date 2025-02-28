@@ -1,0 +1,21 @@
+export const TAX_TYPES = [
+  { name: "Value Added Tax (VAT)", code: "VAT", description: "A consumption tax placed on a product whenever value is added at each stage of the supply chain, from production to the point of sale.", sequence: 10 },
+  { name: "Goods and Services Tax (GST)", code: "GST", description: "A broad-based tax collected on the value added to goods and services. It is typically used in countries that have a federal system of government, such as Canada and Australia.", sequence: 20 },
+  { name: "Income Tax", code: "IT", description: "A tax levied by a government directly on income, especially that received by individuals and corporations.", sequence: 30 },
+  { name: "Property Tax", code: "PT", description: "A tax assessed on real estate by the local government and paid by the property owner.", sequence: 40 },
+  { name: "Excise Tax", code: "ET", description: "A tax on specific goods or activities, such as alcohol, tobacco, and gasoline, which is often included in the price of the product rather than charged separately.", sequence: 50 },
+  { name: "Customs Duty", code: "CD", description: "A tax levied on imports and exports by the customs authority of a country to raise state revenue and/or to protect domestic industries from more efficient or predatory competitors from abroad.", sequence: 60 },
+  { name: "Payroll Tax", code: "PT", description: "A tax withheld from an employee's salary by an employer who remits it to the government on behalf of the employee.", sequence: 70 },
+  { name: "Capital Gains Tax (CGT)", code: "CGT", description: "A tax on the profit from the sale of assets.", sequence: 80 },
+  { name: "Corporate Tax", code: "CT", description: "A tax imposed on the net income of corporations.", sequence: 90 },
+  { name: "Fuel Tax", code: "FT", description: "A tax imposed on the sale of fuel.", sequence: 100 },
+  { name: "Environmental Tax", code: "ET", description: "A tax on activities which are considered to be harmful to the environment, such as carbon emissions or pollution.", sequence: 110 },
+  { name: "Stamp Duty", code: "SD", description: "A tax levied on legal documents, usually in the transfer of assets or properties.", sequence: 120 },
+  { name: "Vehicle Tax", code: "VT", description: "A tax levied on vehicles, typically based on factors such as type of vehicle, engine size, or emissions.", sequence: 130 },
+  { name: "Sin Tax", code: "ST", description: "A tax on products that are deemed harmful to society, such as tobacco and alcohol.", sequence: 140 },
+  { name: "Luxury Tax", code: "LT", description: "A tax on goods or services considered to be luxurious or non-essential.", sequence: 150 },
+  { name: "Transfer Tax", code: "TT", description: "A tax levied on the transfer of ownership or title to property, such as real estate transfer tax.", sequence: 160 },
+  { name: "Local Taxes", code: "LT", description: "Taxes imposed by local governments, such as municipal taxes on property or services.", sequence: 170 },
+  { name: "State Taxes", code: "ST", description: "Taxes levied by state governments, such as state income tax or state sales tax.", sequence: 180 },
+  { name: "Federal Taxes", code: "FT", description: "Taxes imposed by the federal government, such as federal income tax or federal excise tax.", sequence: 190 }
+];
