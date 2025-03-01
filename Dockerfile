@@ -4,7 +4,7 @@ FROM node:16 AS builder
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json first to leverage Docker cache
+# Copy package.json and package-lock.json first to leveage Docker cache
 COPY my-app/package*.json ./
 
 # Install dependencies
