@@ -1,23 +1,25 @@
+export const API_URL = "/api";
+
 // Load environment variables from the .env file
 //import dotenv from 'dotenv';
 //dotenv.config(); // This will read from your .env file and populate process.env
 
 // Data generated from the apiUrl http://localhost:8010/list_ui_config_data
-//export const API_URL = "http://localhost:8012";
+//
 //export const FRONTEND_URL = "http://localhost:3000";
 //export const SMTP_URL = "http://localhost:5000";
 //export const SMTP_EML = "smtp_server@flexerp.com";
 //export const APPLICATION_NAME = "TradeTrackr";
 //export const APPLICATION_LEVEL = "Production"  //Test, Production, Development
 
-//export const API_URL = process.env.APP_SERVER_HOST_URL;
+//
 //export const FRONTEND_URL = process.env.WEB_CLIENT_HOST_URL;
 //export const SMTP_URL = process.env.SMTP_HOST_URL;
 //export const SMTP_EML = process.env.SMTP_EMAIL_ID;
 //export const APPLICATION_NAME = process.env.APPLICATION_NAME;
 //export const APPLICATION_LEVEL = process.env.APPLICATION_LEVEL;;
 
-//export const API_URL = `${process.env.REACT_APP_PROTOCOL}://${process.env.REACT_APP_APP_SERVER_HOST}:${process.env.REACT_APP_APP_SERVER_PORT}`;
+//
 //export const FRONTEND_URL = `${process.env.REACT_APP_PROTOCOL}://${process.env.REACT_APP_WEB_CLIENT_HOST}:${process.env.REACT_APP_WEB_CLIENT_PORT}`;
 //export const SMTP_URL = `${process.env.REACT_APP_PROTOCOL}://${process.env.REACT_APP_SMTP_HOST}:${process.env.REACT_APP_SMTP_PORT}`;
 
@@ -38,8 +40,8 @@ const appConfig = {
 
 // Assuming you already have the appConfig object
 
-export const API_URL = `${appConfig.appServerProtocol}://${appConfig.appServerHost}:${parseInt(appConfig.appServerPort)}`;
-//export const API_URL = `${appConfig.appServerProtocol}://${appConfig.appServerHost}`;
+
+//
 export const FRONTEND_URL = `${appConfig.webClientProtocol}://${appConfig.webClientHost}:${parseInt(appConfig.webClientPort)}`;
 export const SMTP_URL = `${appConfig.smtpProtocol}://${appConfig.smtpHost}:${parseInt(appConfig.smtpPort)}`;
 export const SMTP_EML = appConfig.smtpEmail;
@@ -73,7 +75,7 @@ export const USER_STATUS = [
 ];
 
 export const ENV_INSTANCES = [
-  { instance: "nosha", company: "Company_5", disname: "NOSHA", status: "Active", sequence: 1 },
-  { instance: "theer", company: "Company_5", disname: "THEER", status: "Active", sequence: 2 }
+  { instance: "alpha", company: "DEV", disname: "ALPHA", status: "Active", sequence: 1 },
+  { instance: "beta", company: "DEV", disname: "BETA", status: "Active", sequence: 2 }
 ];
 
