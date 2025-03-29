@@ -1,5 +1,7 @@
 export const API_URL = "/api";
 
+
+
 // Load environment variables from the .env file
 //import dotenv from 'dotenv';
 //dotenv.config(); // This will read from your .env file and populate process.env
