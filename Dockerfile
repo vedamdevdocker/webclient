@@ -40,7 +40,7 @@ RUN chmod 644 /etc/ssl/certs/webclient.crt
 COPY --from=builder /app/build /usr/share/nginx/html
 
 # Expose HTTPS port
-EXPOSE 52516
+EXPOSE 56886
 
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
